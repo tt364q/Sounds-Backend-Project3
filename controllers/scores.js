@@ -6,6 +6,7 @@ module.exports = {
 };
 
 async function create(req, res) {
+  console.log(req.user);
   try {
     await Score.create(req.body);
     // Use the highScores action to return the list
